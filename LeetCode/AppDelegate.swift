@@ -12,9 +12,38 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let rootVc = ViewController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        window?.rootViewController = UINavigationController.init(rootViewController: rootVc)
+        window?.makeKeyAndVisible()
+        
+        let list = ListNode.init(4)
+        list.next = ListNode.init(4)
+        list.next?.next = ListNode.init(3)
+        
+        let list1 = ListNode.init(5)
+        list1.next = ListNode.init(6)
+        list1.next?.next = ListNode.init(6)
+        list1.next?.next?.next = ListNode.init(3)
+        
+         let l = Solution.addTwoNumbers(list, list1 )
+        
+//        let q = FIFOQueue()
+//
+//        let deNode = Node()
+//        deNode.data = "111"
+//        q.push(node: deNode)
+//        let dNode = Node()
+//        dNode.data = "222"
+//        let d2Node = Node()
+//        d2Node.data = "33333222"
+//        let d3Node = Node()
+//        d3Node.data = "111"
+//        q.push(node: dNode)
+//        q.push(node: d2Node)
+//        q.push(node: d3Node)
+//        q.popAll()
         // Override point for customization after application launch.
         return true
     }

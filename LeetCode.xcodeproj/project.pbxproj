@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E3FE8BD2337331400A456B6 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FE8BC2337331400A456B6 /* TwoSum.swift */; };
 		8EB9C03F23327A03005D53B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9C03E23327A03005D53B2 /* AppDelegate.swift */; };
 		8EB9C04123327A03005D53B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9C04023327A03005D53B2 /* ViewController.swift */; };
 		8EB9C04423327A03005D53B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB9C04223327A03005D53B2 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		8EB9C04923327A04005D53B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB9C04723327A04005D53B2 /* LaunchScreen.storyboard */; };
 		8EB9C05423327A04005D53B2 /* LeetCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9C05323327A04005D53B2 /* LeetCodeTests.swift */; };
 		8EB9C05F23327A04005D53B2 /* LeetCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9C05E23327A04005D53B2 /* LeetCodeUITests.swift */; };
+		8EB9C06E23327ACE005D53B2 /* FIFOQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9C06D23327ACE005D53B2 /* FIFOQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E3FE8BC2337331400A456B6 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		8EB9C03B23327A03005D53B2 /* LeetCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB9C03E23327A03005D53B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB9C04023327A03005D53B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		8EB9C05A23327A04005D53B2 /* LeetCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB9C05E23327A04005D53B2 /* LeetCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeUITests.swift; sourceTree = "<group>"; };
 		8EB9C06023327A04005D53B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EB9C06D23327ACE005D53B2 /* FIFOQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIFOQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E3FE8BB233732EF00A456B6 /* TwoNumSum */ = {
+			isa = PBXGroup;
+			children = (
+				8E3FE8BC2337331400A456B6 /* TwoSum.swift */,
+			);
+			path = TwoNumSum;
+			sourceTree = "<group>";
+		};
 		8EB9C03223327A03005D53B2 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +109,8 @@
 		8EB9C03D23327A03005D53B2 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				8E3FE8BB233732EF00A456B6 /* TwoNumSum */,
+				8EB9C06C23327A5D005D53B2 /* Queue */,
 				8EB9C03E23327A03005D53B2 /* AppDelegate.swift */,
 				8EB9C04023327A03005D53B2 /* ViewController.swift */,
 				8EB9C04223327A03005D53B2 /* Main.storyboard */,
@@ -123,6 +137,14 @@
 				8EB9C06023327A04005D53B2 /* Info.plist */,
 			);
 			path = LeetCodeUITests;
+			sourceTree = "<group>";
+		};
+		8EB9C06C23327A5D005D53B2 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				8EB9C06D23327ACE005D53B2 /* FIFOQueue.swift */,
+			);
+			path = Queue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +279,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EB9C04123327A03005D53B2 /* ViewController.swift in Sources */,
+				8EB9C06E23327ACE005D53B2 /* FIFOQueue.swift in Sources */,
+				8E3FE8BD2337331400A456B6 /* TwoSum.swift in Sources */,
 				8EB9C03F23327A03005D53B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
